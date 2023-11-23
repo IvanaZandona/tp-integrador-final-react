@@ -7,8 +7,8 @@ const NavBar = () => {
             <header>
                 <nav>
                     <ul>
-                        <li><Link to="/tasklist" >Task List </Link></li>
-                        <li><Link to="/taskform" >Task Form </Link></li>
+                        {/* <li><Link to="/tasklist" >Task List </Link></li> */}
+                        <li><Link to="/taskform" >Gestionar lista de tareas ⇨ </Link></li>
                     </ul>
                 </nav>
             </header>

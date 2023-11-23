@@ -9,12 +9,13 @@ function App() {
   return (
     <BrowserRouter>
     
-    {/* <NavBar />
+    <NavBar />
     <Routes>
-      <Route path="/tasklist" element={<TaskList />} />
+      {/* <Route path="/tasklist" element={<TaskList />} /> */}
       <Route path="/taskform" element={<TaskForm />} />
-    </Routes> */}
-    <TaskForm />
+    </Routes>
+    
+    {/* <TaskForm /> */}
 
     </BrowserRouter>
   )

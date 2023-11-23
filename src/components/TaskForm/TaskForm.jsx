@@ -12,9 +12,10 @@ const TaskForm = ({}) => {
     const borrar = () => {
         console.log("borrar")
         // const selectTarea = document.getElementById('selectTarea').value;
+        // const optionTarea = document.getElementById('optionTarea').value;
         // switch (selectTarea) {
-        //     case value:
-        //         setTareas('');
+        //     case :
+        //         optionTarea = " ";
         //         break;
         //     default:
         //         console.log("error");
@@ -28,7 +29,7 @@ const TaskForm = ({}) => {
             <h3>Tareas</h3>
             <select id='selectTarea'>
                 {tareas.map((option, index) => (
-                    <option key={index} value={index} >{option}</option>
+                    <option id='optionTarea' key={index} value={index} >{option}</option>
                     
                 ))}
             </select>

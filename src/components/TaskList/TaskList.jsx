@@ -1,6 +1,6 @@
 import React from 'react';
 import TaskItem from '../TaskItem/TaskItem';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
 const TaskList = ({agregarTarea}) => {
 
@@ -15,10 +15,24 @@ const TaskList = ({agregarTarea}) => {
 
     const handleAgregarTarea = (e) => {
         e.preventDefault();
-        console.log(tarea);
         agregarTarea(tarea);
+        if (tarea === true) {
+            setTarea(false);
+        } else {
+            setTarea(true);
+        }
     };
 
+    useEffect(()=>{
+        {tarea ? alert("Tarea añadida a la lista") : " "}
+    },[agregarTarea]);
+
+    // useEffect(() => {
+    //     const timeoutId = setTimeout(() => {
+    //        setMensaje('¡Hola desde useEffect!');
+    //   }, 2000);
+    //      return () => clearTimeout(timeoutId);
+    //    }, [ ]);
 
     return (
         <>
